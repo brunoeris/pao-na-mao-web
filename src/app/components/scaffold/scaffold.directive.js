@@ -3,17 +3,20 @@
 
   angular
     .module('paoNaMaoWeb')
-    .directive('acmeNavbar', acmeNavbar);
+    .directive('pmScaffold', pmScaffold);
 
   /** @ngInject */
-  function acmeNavbar() {
+  function pmScaffold() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/components/navbar/navbar.html',
+      transclude: {
+        'body': 'pmBody'
+      },
+      templateUrl: 'app/components/scaffold/scaffold.html',
       scope: {
           creationDate: '='
       },
-      controller: NavbarController,
+      controller: ScaffoldController,
       controllerAs: 'vm',
       bindToController: true
     };
@@ -21,7 +24,7 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController() {
+    function ScaffoldController() {
       var vm = this;
 
     }

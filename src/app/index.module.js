@@ -14,7 +14,8 @@
                             'toastr',
                             'satellizer',
                             'ngStorage',
-                            'ngMdIcons'
+                            'ngMdIcons',
+                            'ngMap'
                           ]);
 
 
