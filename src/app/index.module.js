@@ -11,6 +11,11 @@
                             'ngResource',
                             'ui.router',
                             'ui.bootstrap',
-                            'toastr']);
+                            'toastr',
+                            'satellizer',
+                            'ngStorage',
+                            'ngMdIcons'
+                          ]);
+
 
 })();
